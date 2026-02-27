@@ -1,0 +1,26 @@
+{
+  "name": "gbairai-backend-auth",
+  "version": "1.0.0",
+  "description": "Passwordless authentication backend for gbairai (Node.js, Express)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.11.1",
+    "jsonwebtoken": "^9.0.0",
+    "nodemailer": "^6.9.8",
+    "rate-limiter-flexible": "^2.3.10",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
