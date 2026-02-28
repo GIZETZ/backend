@@ -3,7 +3,7 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { RateLimiterMemory } from 'rate-limiter-flexible';
 import fetch from 'node-fetch';
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+//sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 import { initFirestore } from '../firestore.js';
 
 const router = express.Router();
