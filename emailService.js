@@ -2,6 +2,8 @@ import axios from "axios";
 
 const sendEmail = async (to, subject, htmlContent) => {
   try {
+    const apiKey = process.env.AHASEND_API_KEY;
+    console.log("Clé API utilisée (début masqué) :", apiKey ? apiKey.slice(0, 6) + '...' : 'Aucune');
     const response = await axios.post(
       "https://api.ahasend.com/v1/email/send",
       {
@@ -13,7 +15,7 @@ const sendEmail = async (to, subject, htmlContent) => {
       {
         headers: {
           "Content-Type": "application/json",
-          "X-API-KEY": process.env.AHASEND_API_KEY
+          "X-API-KEY": apiKey
         }
       }
     );
