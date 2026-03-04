@@ -24,4 +24,4 @@ const sendEmail = async (to, subject, htmlContent) => {
   }
 };
 
-module.exports = sendEmail;
+export default sendEmail;
